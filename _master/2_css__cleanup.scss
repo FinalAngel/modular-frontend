@@ -1,0 +1,41 @@
+/* #############################################################################
+    Excercise 2
+    ###########
+    Create a more reusable CSS structure using SASS without changing the HTML:
+
+    <div class="content">
+        <section class="content-special">
+            <h1>Hello Special</h1>
+        </section>
+        <section class="content-dark">
+            <h1>Hello Dark</h1>
+        </section>
+    </div>
+    <aside class="sidebar">
+        <div class="facebook">
+            <h1>Hello Facebook</h1>
+        </div>
+    </aside>
+*/
+
+/* create defaults */
+
+h1 {
+    color: black;
+}
+
+/* but different for */
+.content h1 {
+    color: white;
+}
+
+.content-special h1,
+.content-dark h1 {
+    font-style: italic;
+}
+
+/* and make it smaller on the sidebar */
+
+.sidebar .facebook h1 {
+    font-size: 12px;
+}
