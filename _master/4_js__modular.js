@@ -1,5 +1,5 @@
 /*  ############################################################################
-    Excercise 3
+    Excercise 4
     ###########
     - Create one module which sets the "active" class to the current selected
       "gallery" item "li".
