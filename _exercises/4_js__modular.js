@@ -20,9 +20,13 @@
     </ol>
 */
 
+/* independent gallery function */
+
 function gallery() {
 
 }
+
+/* independent pagination function */
 
 function pagination() {
 
