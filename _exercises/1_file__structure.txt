@@ -19,3 +19,18 @@ root/
 ├─ non-modular/
 │  └─ _competition.sass
 └─ base.sass
+
+
+
+root/
+├─ css/
+│  ├─ _foundation.sass
+│  ├─ _global.sass
+│  ├─ _reset.sass
+│  └─ _settings.sass
+├─ js/
+│  └─ sample.js
+├─ html/
+│  └─ index.html
+└─ images/
+    └─ sample.png
