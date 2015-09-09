@@ -19,24 +19,23 @@
 */
 
 /* create defaults */
-
 h1 {
     color: black;
+
+    .content & {
+        color: white;
+
+        .content-special &,
+        .content-dark & {
+            font-style: italic;
+        }
+    }
+
+    .sidebar .facebook & {
+        font-size: 12px;
+    }
 }
 
 /* but different for */
 
-.content h1 {
-    color: white;
-}
-
-.content-special h1,
-.content-dark h1 {
-    font-style: italic;
-}
-
 /* and make it smaller on the sidebar */
-
-.sidebar .facebook h1 {
-    font-size: 12px;
-}
