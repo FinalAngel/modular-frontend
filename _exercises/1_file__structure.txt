@@ -5,6 +5,10 @@
 Example structure, create one which you can use throughout the excercises.
 
 root/
+├─ backend/
+│  ├─ node
+│  ├─ build
+├─ js/
 ├─ base/
 │  ├─ _foundation.sass
 │  ├─ _global.sass
