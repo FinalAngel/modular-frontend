@@ -4,7 +4,7 @@
 
 Example structure, create one which you can use throughout the excercises.
 
-root/
+denns.garrn/
 ├─ base/
 │  ├─ _global.sass
 │  ├─ _settings.sass
