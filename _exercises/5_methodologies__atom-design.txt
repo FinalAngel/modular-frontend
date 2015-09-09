@@ -7,5 +7,21 @@ template example available to us. List them in a manner that makes sense to
 you:
 
 ##### list potential molecules
+Warenkorb
+Account
+Suche
+Titel
+Navigation
+Intro
+Item Tile
+Quick Links
+Accouncments
+Coming Soon
+Disclaimer
 
 ##### list potential organisms
+Header mir Warenkorb, Account, Suche
+Navigation mit Titel und Navigation
+Intro
+Items mit Item Tiles
+Footer mit Quick Links, Accouncments, Coming Soon, Disclaimer
