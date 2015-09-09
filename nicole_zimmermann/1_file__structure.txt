@@ -19,7 +19,8 @@ root/
     .
     .
    ├─ images
-   
+
+  
 ├─ app/
  ├─stylesheet
      ├─ stylesheet.css
