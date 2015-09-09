@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Modular Frontend</title>
+</head>
+
+<body>
+<h1>This is my website</h1>
+<section>
+    <h2>Main Content</h2>
+
+    <article>
+        <header>
+            <h3>My Title</h3>
+        </header>
+        <h4>My Content</h4>
+        <footer>
+            <h5>My Footer</h5>
+            <h6>My Sitemap</h6>
+        </footer>
+    </article>
+</section>
+
+<aside>
+    <h1>Side Content</h1>
+    <header>
+        <section>
+            <h1>Sidebar</h1>
+        </section>
+    </header>
+</aside>
+</body>
+</html>
