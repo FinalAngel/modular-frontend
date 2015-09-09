@@ -1,0 +1,15 @@
+/root
+    Common
+        Code
+            file1
+        Html
+            file1.html
+        Style
+            file1.css
+    Project1
+        Code
+            project file1
+        Html
+            project file1.html
+        Style
+            project file1.css

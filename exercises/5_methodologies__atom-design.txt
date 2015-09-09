@@ -1,0 +1,45 @@
+################################################################################
+    Excercise 5
+###############
+
+We are going to focus on molecules and organisms as there is only one
+template example available to us. List them in a manner that makes sense to
+you:
+
+##### list potential molecules
+Search
+My Account
+Warenkorb
+
+Header Navigation
+Header Title
+
+Big advertisement
+
+Item pict
+Item title
+Item category
+Item price
+
+Intro title
+Intro text
+
+Quick links
+Announcement
+Comming Soon
+
+Footer
+
+##### list potential organisms
+Header grau (Search + My Account + Warenkorb)
+
+Heder (Title + Navigation)
+
+Intro (title + text)
+
+Item (pict + title + category + price)
+Items (list of item)
+
+Footer grau (quick links + Announcement + Comming soon)
+
+Footer (Footer)
