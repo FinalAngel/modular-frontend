@@ -8,9 +8,9 @@
       "gallery" without altering each others code (hint event dispatching)
 
     <ul class="gallery">
-        <li><img src="..." /></li>
-        <li><img src="..." /></li>
-        <li><img src="..." /></li>
+        <li><img src="..."></li>
+        <li><img src="..."></li>
+        <li><img src="..."></li>
     </ul>
 
     <ol class="pagination">
