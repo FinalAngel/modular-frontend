@@ -1,0 +1,21 @@
+################################################################################
+    Excercise 1
+###############
+
+Example structure, create one which you can use throughout the excercises.
+
+root/
+├─ app/
+│  ├─ home
+│  ├─ news
+│  ├─ contact
+│  └─
+├─ assets/
+│  ├─ img
+│  ├─ js
+│  └─ css
+├─ admin/
+│  └─ user
+├─ view/
+│  └─ start
+└─ index.html
