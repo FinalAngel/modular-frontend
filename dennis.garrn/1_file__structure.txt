@@ -1,0 +1,23 @@
+################################################################################
+    Excercise 1
+###############
+
+Example structure, create one which you can use throughout the excercises.
+
+root/
+├─ base/
+│  ├─ _global.sass
+│  ├─ _settings.sass
+│  └─ _reset.sass
+│  ├─ source/
+│  └─ _foundation.sass
+├─ layout/
+│  ├─ _containers.sass
+│  └─ _positioning.sass
+│  ├─ libs/
+│  ├─ _grid.sass
+├─ modules/
+│  └─ _box.sass
+├─ non-modular/
+│  └─ _competition.sass
+└─ base.sass
