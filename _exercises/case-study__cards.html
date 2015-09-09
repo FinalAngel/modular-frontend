@@ -11,15 +11,15 @@
         <p class="card__desc">{{ card.desc }}</p>
 
         {% if card.style.product %}
-            <ul class="card__list">
+            <ul class="list">
                 {% for item in card.list %}
-                    <li class="card__list-item">{{ item}}</li>
+                    <li class="list-item">{{ item}}</li>
                 {% endfor %}
             </ul>
         {% endif %}
 
         <p class="card__price">{{ card.price }}</p>
-        <a href="{{ card.button.get_absolute_url }}" class="card__button">
+        <a href="{{ card.button.get_absolute_url }}" class="button card__button">
             {{ card.button.label }}
         </a>
     </section>
