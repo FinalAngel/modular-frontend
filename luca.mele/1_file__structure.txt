@@ -1,0 +1,19 @@
+################################################################################
+    Excercise 1
+###############
+
+Example structure, create one which you can use throughout the excercises.
+
+root/
+├─ app/
+│  ├─ modules/
+        └─ etwas.js
+│  └─ main.js
+
+├─ resources/
+    ├─ styles/
+    │  ├─ _containers.sass
+    │  ├─ _grid.sass
+    │  └─ _positioning.sass
+
+├─ vendor/
