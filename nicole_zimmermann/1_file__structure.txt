@@ -1,0 +1,33 @@
+################################################################################
+    Excercise 1
+###############
+
+Example structure, create one which you can use throughout the excercises.
+root/
+├─ build/
+  ├─stylesheets
+   ├─ 01_variables.less
+   ├─ 02_fonts.less
+   ├─ 03_layout.less
+   ├─ 04_mediaqueries.less
+   ├─ 05_ie.less
+  ├─javascript
+    ├─ all.js
+  ├─ html
+    ├─ index.html
+    .
+    .
+    .
+   ├─ images
+   
+├─ app/
+ ├─stylesheet
+     ├─ stylesheet.css
+  ├─javascript
+      ├─ all.min.js
+  ├─ html
+     ├─ index.html
+     .
+     .
+     .
+  ├─ images
