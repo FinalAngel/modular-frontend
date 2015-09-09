@@ -1,0 +1,27 @@
+################################################################################
+    Excercise 5
+###############
+
+We are going to focus on molecules and organisms as there is only one
+template example available to us. List them in a manner that makes sense to
+you:
+
+##### list potential molecules
+- 1 Intro (Lead mit Text)
+- 2 Bild (Titel mit Bild)
+- 3 Header-Navigation (die im Header)
+- 4 Footer-Navigation (die im Footer)
+- 5 Suche (Input + Searchbutton)
+- 6 Shopping Cart
+- 7 MyAccount-Link
+- 8 Header-Panel (Bild)
+- 9 Titel-Text
+- 10 Teaser (Bild, Titel, Kategorie, Preis)
+
+##### list potential organisms
+- Header (5,6,7)
+- Titel (9,8,3)
+- Hauptartikel (1)
+- Teasers (10)
+- Big-Footer (4, 1, 2)
+- Small-Footer
