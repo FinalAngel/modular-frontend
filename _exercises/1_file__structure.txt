@@ -19,3 +19,17 @@ root/
 ├─ non-modular/
 │  └─ _competition.sass
 └─ base.sass
+
+app/
+├─ styles/
+│  ├─ _screen.sass
+│  ├─ _resets.sass
+│  ├─ _helpers.sass
+│  ├─ _header.sass
+│  ├─ _content.sass
+│  └─ _footer.sass
+├─ modules/
+│  └─ _box.sass
+├─ non-modular/
+│  └─ _competition.sass
+└─ base.sass
