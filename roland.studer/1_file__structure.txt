@@ -1,0 +1,26 @@
+################################################################################
+    Excercise 1
+###############
+
+
+
+source/
+	style/
+		main.scss
+		_base.scss
+	modules/
+		header/
+			header.hbs
+			header.scss
+			header.js
+		module_x/ 
+	layouts/
+		layout.hbs
+		layout.scss
+build/
+	style.css
+	index.html
+	js.js
+vendors/
+	style/
+	javascript/
