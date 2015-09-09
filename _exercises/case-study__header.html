@@ -1,0 +1,52 @@
+<!-- example for "_resources/case-study_header.png" -->
+
+<header class="layout layout__header">
+    <h1 class="logo header__logo">Zürcher Kantonalbank</h1>
+    <ul class="nav header__nav">
+        <li class="nav__item">Standorte</li>
+        <li class="nav__item">Jobs</li>
+        <li class="nav__item">English</li>
+    </ul>
+    <form class="form header__search" method="post">
+        <label>
+            <input type="search" class="header__search-input" placeholder="Suche in zkb.ch">
+            <span class="layout__hidden">Suche in zkb.ch</span>
+        </label>
+    </form>
+    <a href="/" class="header__button">Finanzinfos</a>
+    <a href="/" class="header__button">eBanking</a>
+</header>
+
+<ul class="nav layout__nav">
+    <li class="nav__item js-megamenu">Private</li>
+    <li class="nav__item js-megamenu">Unternehmen</li>
+    <li class="nav__item js-megamenu">Kontakt &amp; Services</li>
+    <li class="nav__item nav__item_right js-megamenu">Über uns</li>
+</ul>
+
+<!-- megamenu code invoked using javascript -->
+{% for megamenu in megamenus %}
+    <section class="megamenu js-megamenu-{{ megamenu.pk }}">
+        {% if megamenu.is_menu %}
+            <ul class="nav megamenu__nav">
+                {% for menu in megemanu.menus %}
+                    <li class="nav__item">
+                        <a href="{% menu.get_absolute_url %}" class="nav__anchor">
+                            {% menu.title %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if megamenu.is_teaser %}
+            <div class="teaser megamenu__teaser">
+                <img src="{{ megamenu.teaser.img }}" alt="{{ megamenu.teaser.alt }}" class="teaser__img">
+                <p class="teaser__lead">{{ megamenu.teaser.lead }}</p>
+                <h2 class="teaser__title">{{ megamenu.teaser.title }}</h2>
+                <p class="teaser__desc">{{ megamenu.teaser.desc }}</p>
+            </div>
+        {% endif %}
+        <!-- easily add new conditions -->
+        <p class="megamenu__close js-megamenu-close">schliessen</p>
+    </section>
+{% endfor %}

@@ -1,0 +1,31 @@
+<!-- example for "_resources/case-study_products.png" -->
+
+{% for product in products %}
+    <div class="product product-list__item">
+        <header class="product__header">
+            <img src="{{ product.img }}" alt="{{ product.alt }}" class="product__image" />
+        </header>
+        <main class="product__body">
+            <p class="product__price">{{ product.price }}</p>
+            <h2 class="product__title">{{ product.name }}</h2>
+            <ul class="product__features">
+                {% for feature in product.features %}
+                    <li class="product__features-item">{{ feature }}</li>
+                {% endfor %}
+            </ul>
+        </main>
+        <footer class="product__footer">
+            <a href="{{ product.button.get_absolute_url }}" class="product__button">
+                {{ product.button.label }}
+            </a>
+        </footer>
+    </div>
+{% endfor %}
+
+<nav class="pagination pagination_product">
+    {% for page in pagination %}
+        <a href="{{ page.get_absolute_url }}" class="pagination__anchor">
+            {{ page.title }}
+        </a>
+    {% endfor %}
+</nav>
