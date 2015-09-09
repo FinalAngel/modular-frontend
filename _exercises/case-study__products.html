@@ -5,7 +5,7 @@
         <header class="product__header">
             <img src="{{ product.img }}" alt="{{ product.alt }}" class="product__image">
         </header>
-        <main class="product__body">
+        <div class="product__body">
             <p class="product__price">{{ product.price }}</p>
             <h2 class="product__title">{{ product.name }}</h2>
             <ul class="product__features">
@@ -13,7 +13,7 @@
                     <li class="product__features-item">{{ feature }}</li>
                 {% endfor %}
             </ul>
-        </main>
+        </div>
         <footer class="product__footer">
             <a href="{{ product.button.get_absolute_url }}" class="product__button">
                 {{ product.button.label }}
