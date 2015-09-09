@@ -7,12 +7,15 @@ Example structure, create one which you can use throughout the excercises.
 root/
 ├─ doc/
 │  ├─ *.png
-├─ excercises/
+├─ exercises/
 │  ├─ ?
 ├─ app/
 │  ├─ server/
+│  │  ├─ css/
+│  │  ├─ html/
 │  │  ├─ js/
 │  │  ├─ lib/
-│  │  ├─ css/
 │  │  ├─ index.html
 │  ├─ test/
+├─ build/
+│  ├─ server/
