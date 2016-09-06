@@ -1,0 +1,26 @@
+<!-- example for "_resources/case-study_cards.png" -->
+
+{% for card in cards %}
+    <section class="card
+        {% if card.style.dark %} card_inverse{% endif %}"
+        {% if card.background %}
+            style="background-image:url({{ card.background }});"
+        {% endif %}
+    >
+        <h1 class="card__title">{{ card.title }}</h1>
+        <p class="card__desc">{{ card.desc }}</p>
+
+        {% if card.style.product %}
+            <ul class="list">
+                {% for item in card.list %}
+                    <li class="list-item">{{ item}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <p class="card__price">{{ card.price }}</p>
+        <a href="{{ card.button.get_absolute_url }}" class="button card__button">
+            {{ card.button.label }}
+        </a>
+    </section>
+{% endfor %}

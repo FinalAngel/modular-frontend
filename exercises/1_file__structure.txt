@@ -1,8 +1,8 @@
 ################################################################################
-    Excercise 1
+    Exercises 1
 ###############
 
-Example structure, create one which you can use throughout the excercises.
+Example structure, create one which you can use throughout the exercises.
 
 root/
 ├─ base/
