@@ -1,5 +1,5 @@
 ################################################################################
-    Excercise 5
+    Exercises 5
 ###############
 
 We are going to focus on molecules and organisms as there is only one
