@@ -1,12 +1,10 @@
-################
-Modular Frontend
-################
+########################
+CAS Frontend Engineering
+########################
 
 
-
-
-This repository contains all resources required for the "Modular Frontend"
-lecture.
+Komplexe Sites Modular Strukturieren
+====================================
 
 Please fork this repository to create pull request with your solutions.
 
