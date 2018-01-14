@@ -4,13 +4,13 @@
     Create an example markup using the BEM style:
     BLOCK:
         using dashes for word separation
-        (site-logo, site-logo_xmas)
+        (custom-site__logo, custom-site__logo--xmas)
     ELEMENT:
         using double underscore
         (person__header, person__body)
     MODIFIER
-        using underscore as separator
-        (media__img_disabled, media__img_large)
+        using double dashes as separator
+        (media__img--disabled, media__img--large)
 
     EXAMPLE:
     <form class="site-search narrow">
@@ -18,15 +18,15 @@
         <input type="submit" value="Search" class="button">
     </form>
     becomes:
-    <form class="site-search site-search_narrow">
-        <input type="text" class="site-search__field">
+    <form class="site__search site__search--narrow">
+        <input type="text" class="site__search__field">
         <input type="submit" value="Search" disabled
-            class="site-search__button site-search__button_disabled">
+            class="site__search__button site__search__button--disabled">
     </form>
 -->
 
 <div class="box">
-    <div class="box__item box__item_active">
+    <div class="box__item box__item--active">
         ...
     </div>
     <div class="box__item">
