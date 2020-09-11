@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./style.scss";
+import { Container, Copyright } from "./components/common";
+import Logo from "./components/logo";
+
+// example using sass-loader
+import "./reset.scss";
+import "./styles.scss";
 
 const App = () => {
   return (
-    <>
+    <Container>
       <header class="header">
         <ul class="meta">
           <li class="meta-item">
@@ -21,7 +26,7 @@ const App = () => {
           </li>
         </ul>
 
-        <h1 class="logo">A Big Title</h1>
+        <Logo />
 
         <nav class="navigation">
           <h2 hidden>Navigation</h2>
@@ -139,8 +144,8 @@ const App = () => {
         </div>
       </footer>
 
-      <p className="copyright">&copy; 2020 Demo Site</p>
-    </>
+      <Copyright />
+    </Container>
   );
 };
 
