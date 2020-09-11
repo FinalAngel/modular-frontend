@@ -1,4 +1,7 @@
 node_modules/
 dist/
 .cache/
+
+__image_snapshots__/
+
 package-lock.json
