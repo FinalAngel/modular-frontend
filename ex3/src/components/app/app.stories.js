@@ -3,10 +3,10 @@ import React from "react";
 import App from "./";
 
 export default {
-  title: "App/Preview",
+  title: "App",
   component: App,
 };
 
-const Tpl = () => <App />;
+const Template = (args) => <App {...args} />;
 
-export const Template = Tpl.bind({});
+export const Preview = Template.bind({});
