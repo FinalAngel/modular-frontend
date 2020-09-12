@@ -9,8 +9,8 @@ export default {
 
 const Template = (args) => <QuickLinks {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Example = Template.bind({});
+Example.args = {
   items: ["Item 1", "Item 2", "Item 3", "Item 4"],
   className: "",
 };

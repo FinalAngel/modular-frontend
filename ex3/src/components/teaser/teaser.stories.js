@@ -9,8 +9,8 @@ export default {
 
 const Template = (args) => <Teaser {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Example = Template.bind({});
+Example.args = {
   title: "Teaser Title",
   children: "Teaser Content",
   className: "",
