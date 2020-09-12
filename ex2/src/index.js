@@ -11,16 +11,16 @@ import "./styles.scss";
 const App = () => {
   return (
     <Container>
-      <header class="header">
-        <ul class="meta">
-          <li class="meta-item">
+      <header className="header">
+        <ul className="meta">
+          <li>
             12 items in <a href="#">Cart</a>
           </li>
-          <li class="meta-item">
+          <li>
             <a href="#">My Account</a>
           </li>
-          <li class="meta-item">
-            <form class="meta-form" method="post">
+          <li>
+            <form method="post">
               <input type="search" /> <input type="submit" value="Search" />
             </form>
           </li>
@@ -28,22 +28,22 @@ const App = () => {
 
         <Logo />
 
-        <nav class="navigation">
+        <nav className="navigation">
           <h2 hidden>Navigation</h2>
-          <ul class="nav">
-            <li class="nav-item">
+          <ul>
+            <li>
               <a href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#">Event</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#">Accessoires</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#">Apparel</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a href="#">Feautred Items</a>
             </li>
           </ul>
