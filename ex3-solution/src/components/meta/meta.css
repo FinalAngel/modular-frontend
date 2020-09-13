@@ -1,0 +1,15 @@
+.meta {
+  flex: 1 100%;
+  text-align: right;
+  padding: 8px 5px;
+  background: #ccc;
+}
+
+.meta-item {
+  display: inline;
+  margin-left: 20px;
+}
+
+.meta-form {
+  display: inline;
+}
