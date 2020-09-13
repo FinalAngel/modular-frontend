@@ -3,7 +3,7 @@ import React from "react";
 import QuickLinks from "./";
 
 export default {
-  title: "Components/Quick Links",
+  title: "Molecules/Quick Links",
   component: QuickLinks,
 };
 

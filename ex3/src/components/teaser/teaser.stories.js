@@ -3,7 +3,7 @@ import React from "react";
 import Teaser from "./";
 
 export default {
-  title: "Components/Teaser",
+  title: "Molecules/Teaser",
   component: Teaser,
 };
 
