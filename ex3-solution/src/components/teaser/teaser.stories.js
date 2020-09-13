@@ -13,5 +13,4 @@ export const Example = Template.bind({});
 Example.args = {
   title: "Teaser Title",
   children: "Teaser Content",
-  className: "",
 };

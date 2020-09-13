@@ -22,8 +22,8 @@
   padding-right: 20px;
 }
 
-.footer-grid-alpha,
-.footer-grid-omega {
+.footer-grid__alpha,
+.footer-grid__omega {
   flex: 1 75%;
   padding: 0;
 }

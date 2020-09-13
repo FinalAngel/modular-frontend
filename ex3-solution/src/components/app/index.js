@@ -2,8 +2,7 @@ import React from "react";
 
 import { Container, Header, Footer, Copyright } from "../../components/layout";
 
-import Products from "../../components/products";
-import ProductItem from "../../components/products/product-item";
+import { Products, ProductsItem } from "../../components/products";
 
 import Headline from "../../components/headline";
 
@@ -19,10 +18,10 @@ const App = () => (
     />
 
     <Products>
-      <ProductItem />
-      <ProductItem />
-      <ProductItem />
-      <ProductItem />
+      <ProductsItem />
+      <ProductsItem />
+      <ProductsItem />
+      <ProductsItem />
     </Products>
 
     <Footer />

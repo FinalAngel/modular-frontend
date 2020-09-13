@@ -26,10 +26,10 @@ export const Header = () => (
 
 export const Footer = () => (
   <footer className="footer">
-    <h2 hidden>Footer</h2>
+    <h2 className="heading heading__h2 heading--hidden">Footer</h2>
     <QuickLinks
       items={["Home", "Events", "Support", "Contact"]}
-      className="footer-grid-alpha"
+      className="footer-grid__alpha"
     />
 
     <Teaser title="Announcements / Promoted Content" className="footer-grid">
@@ -41,7 +41,7 @@ export const Footer = () => (
       </p>
     </Teaser>
 
-    <Teaser title="Coming Soon" className="footer-grid footer-grid-omega">
+    <Teaser title="Coming Soon" className="footer-grid footer-grid__omega">
       <img src="https://dummyimage.com/150x60/ffffff/999999.jpg" alt="" />
     </Teaser>
   </footer>

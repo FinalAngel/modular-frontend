@@ -18,7 +18,7 @@ export const navigationItems = [
 // could introduce unwanted behaviour
 const Navigation = ({ items }) => (
   <nav className="navigation">
-    <h2 hidden>Navigation</h2>
+    <h2 className="heading heading__h2 heading--hidden">Navigation</h2>
     <Nav>
       {items.map((item) => (
         <NavItem key={item} title={item} />

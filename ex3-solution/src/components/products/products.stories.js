@@ -1,7 +1,6 @@
 import React from "react";
 
-import Products from "./";
-import ProductItem from "./product-item";
+import { Products, ProductsItem } from "./";
 
 export default {
   title: "Organisms/Products",
@@ -11,7 +10,7 @@ export default {
 const Template = (args) => (
   <Products>
     {[...Array(args.items)].map(() => (
-      <ProductItem />
+      <ProductsItem />
     ))}
   </Products>
 );

@@ -5,11 +5,11 @@
   background: #ccc;
 }
 
-.meta-item {
+.meta__item {
   display: inline;
   margin-left: 20px;
 }
 
-.meta-form {
+.meta__form {
   display: inline;
 }
