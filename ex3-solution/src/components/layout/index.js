@@ -1,16 +1,16 @@
 import React from "react";
 
+// order matters!
+import "./reset.css";
+import "./base.css";
+import "./layout.css";
+
 import Meta from "../../components/meta";
 import Logo from "../../components/logo";
 import Navigation, { navigationItems } from "../../components/navigation";
 
 import QuickLinks from "../../components/quick-links";
 import Teaser from "../../components/teaser";
-
-// order matters!
-import "./reset.css";
-import "./base.css";
-import "./layout.css";
 
 export const Container = ({ children }) => (
   <div className="container">{children}</div>
