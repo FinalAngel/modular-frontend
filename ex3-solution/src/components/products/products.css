@@ -1,0 +1,14 @@
+.products {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -10px;
+}
+
+.products__item {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.products__title {
+  margin: 0;
+}

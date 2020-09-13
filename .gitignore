@@ -1,2 +1,7 @@
 node_modules/
-.DS_Store
+dist/
+.cache/
+
+__image_snapshots__/
+
+package-lock.json

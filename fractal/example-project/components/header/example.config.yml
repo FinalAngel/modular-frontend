@@ -1,4 +1,0 @@
-title: Header
-context:
-    text: This is an example component!
-    data: ['hello', 'world']
