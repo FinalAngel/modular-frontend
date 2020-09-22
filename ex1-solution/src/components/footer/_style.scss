@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+
+  padding: 20px;
+  margin-top: 50px;
+  background: #ccc;
+}
+
+.footer-grid {
+  flex: 1 auto;
+  padding-right: 20px;
+}
+
+// multiple approaches possible
+.footer-grid-alpha,
+.footer-grid-omega {
+  flex: 1 75%;
+  padding: 0;
+}
