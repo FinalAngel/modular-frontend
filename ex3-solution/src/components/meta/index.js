@@ -2,7 +2,7 @@ import React from "react";
 
 import "./meta.css";
 
-const Meta = ({ cart = true, account = true, search = true }) => (
+const Meta = ({ cart = true, account = true, search = true } = {}) => (
   <ul className="meta">
     {cart ? (
       <li className="meta__item">

@@ -9,7 +9,7 @@ export default {
 
 const Template = (args) => (
   <Products>
-    {[...Array(args.items)].map(() => (
+    {[...Array(args.count)].map(() => (
       <ProductsItem />
     ))}
   </Products>
@@ -17,6 +17,6 @@ const Template = (args) => (
 
 export const Items = Template.bind({});
 Items.args = {
-  items: 5,
+  count: 5,
   className: "",
 };
