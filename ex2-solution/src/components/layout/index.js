@@ -1,13 +1,12 @@
 import React from "react";
 
-import Meta from "../../components/meta";
-import Logo from "../../components/logo";
-import Navigation from "../../components/navigation";
+import Meta from "../meta";
+import Logo from "../logo";
+import Navigation from "../navigation";
 
-import QuickLinks from "../../components/quick-links";
-import Teaser from "../../components/teaser";
+import QuickLinks from "../quick-links";
+import Teaser from "../teaser";
 
-// order matters!
 import "./reset.css";
 import "./base.css";
 import "./layout.css";

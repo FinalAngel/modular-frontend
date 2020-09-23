@@ -1,16 +1,22 @@
 import React from "react";
 
-// order matters!
 import "./reset.css";
 import "./base.css";
 import "./layout.css";
 
-import Meta from "../../components/meta";
-import Logo from "../../components/logo";
-import Navigation, { navigationItems } from "../../components/navigation";
+import Meta from "../meta";
+import Logo from "../logo";
+import Navigation, { navigationItems } from "../navigation";
 
-import QuickLinks from "../../components/quick-links";
-import Teaser from "../../components/teaser";
+import QuickLinks from "../quick-links";
+import Teaser from "../teaser";
+
+// this file should be split into its own components ideally as well, e.g.:
+// layout/container
+// layout/header
+// layout/footer
+// layout/copyright
+// to separate the logic and css => modular design
 
 export const Container = ({ children }) => (
   <div className="container">{children}</div>

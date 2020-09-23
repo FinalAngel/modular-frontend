@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Container, Header, Footer, Copyright } from "../../components/layout";
+import { Container, Header, Footer, Copyright } from "../layout";
 
-import { Products, ProductsItem } from "../../components/products";
+import { Products, ProductsItem } from "../products";
 
-import Headline from "../../components/headline";
+import Headline from "../headline";
 
 const App = () => (
   <Container>
