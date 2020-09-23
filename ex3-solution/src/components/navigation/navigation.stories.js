@@ -11,5 +11,5 @@ const Template = () => <Navigation items={navigationItems} />;
 
 export const Example = Template.bind({});
 Example.args = {
-  items: ["Home", "Event", "Accessoires", "Apparel", "Feautred Items"],
+  items: ["Home", "Event", "Accessoires", "Apparel", "Featured Items"],
 };

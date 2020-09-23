@@ -44,7 +44,7 @@ const App = () => {
               <a href="#">Apparel</a>
             </li>
             <li>
-              <a href="#">Feautred Items</a>
+              <a href="#">Featured Items</a>
             </li>
           </ul>
         </nav>

@@ -5,7 +5,7 @@ import NavItem from "./nav-item";
 
 import "./navigation.scss";
 
-const items = ["Home", "Event", "Accessoires", "Apparel", "Feautred Items"];
+const items = ["Home", "Event", "Accessoires", "Apparel", "Featured Items"];
 
 const Navigation = () => (
   <nav className="navigation">
