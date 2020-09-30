@@ -7,12 +7,12 @@ export const Container = styled.div`
   margin: 20px auto;
 `;
 
-// example using styled-components
-const CopyRightStyle = styled.p`
-  text-align: center;
-  margin-top: 20px;
-`;
+// example using inline-css
+const styles = {
+  textAlign: "center",
+  marginTop: "20px",
+};
 
 export const Copyright = () => (
-  <CopyRightStyle>&copy; 2020 Demo Site</CopyRightStyle>
+  <p style={styles}>&copy; 2020 Demo Site</p>
 );
