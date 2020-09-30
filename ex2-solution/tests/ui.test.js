@@ -10,7 +10,7 @@ describe("image-snapshot", () => {
   beforeAll(async () => {
     browser = await puppeteer.launch({
       headless: true,
-      defaultViewport: { width: 1024, height: 1000 },
+      defaultViewport: { width: 1024, height: 1048 },
       timeout: 0,
     });
     page = await browser.newPage();
