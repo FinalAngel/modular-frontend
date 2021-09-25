@@ -13,6 +13,7 @@
     "@storybook/addon-actions": "^6.3.8",
     "@storybook/addon-essentials": "^6.3.8",
     "@storybook/addon-links": "^6.3.8",
+    "@storybook/addon-docs": "^6.3.8",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.3.8",
     "babel-loader": "^8.2.2",
