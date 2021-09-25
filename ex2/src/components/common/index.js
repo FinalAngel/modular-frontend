@@ -14,5 +14,5 @@ const styles = {
 };
 
 export const Copyright = () => (
-  <p style={styles}>&copy; 2020 Demo Site</p>
+  <p style={styles}>&copy; {new Date().getFullYear()} Demo Site</p>
 );

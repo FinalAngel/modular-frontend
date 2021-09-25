@@ -47,5 +47,5 @@ export const Footer = () => (
 );
 
 export const Copyright = () => (
-  <p className="copyright">&copy; 2020 Demo Site</p>
+  <p className="copyright">&copy; {new Date().getFullYear()} Demo Site</p>
 );
