@@ -8,9 +8,12 @@ import Header from "components/header";
 import Headline from "components/headline";
 import Logo from "components/logo";
 import Products from "components/products";
+import QuickLinks from "components/quick-links";
+import Teaser from "components/teaser";
 
 import { Form, Input } from "components/form";
 import { Nav, NavItem, NavAnchor } from "components/nav";
+import { Grid, GridItem } from "components/grid";
 import { Title, Text } from "components/typography";
 
 const root = ReactDOM.createRoot(
@@ -62,7 +65,35 @@ root.render(
         </Text>
       </Headline>
       <Products />
-      <Footer />
+      <Footer>
+        <Grid>
+          <GridItem alpha>
+            <QuickLinks items={["Home", "Events", "Support", "Contact"]} />
+          </GridItem>
+
+          <GridItem>
+            <Teaser title="Announcements / Promoted Content">
+              <Text>
+                Sed consequat, leo eget bibendum sodales, augue velit cursus
+                nunc, quis gravida magna mi a libero. Suspendisse enim turpis,
+                dictum sed, iaculis a, condimentum nec, nisi. Praesent egestas
+                tristique nibh. Vestibulum suscipit nulla quis orci. Nunc
+                nonummy metus.
+              </Text>
+            </Teaser>
+          </GridItem>
+
+          <GridItem omega>
+            <Teaser title="Coming Soon">
+              <img
+                src="https://dummyimage.com/150x60/ffffff/999999.jpg"
+                alt=""
+                className="footer__logo"
+              />
+            </Teaser>
+          </GridItem>
+        </Grid>
+      </Footer>
       <Copyright />
     </Container>
   </React.StrictMode>
