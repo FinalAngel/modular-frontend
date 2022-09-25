@@ -1,10 +1,14 @@
 # CAS Frontend Engineering
 
-Please fork this repository to go along with the course.
+Please fork this repository to go along with the course. This project uses the following technologies:
+
+- [Parcel](https://parceljs.org/)
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 
 ## Server
 
-In each excersise folder run:
+To run the demo application you need Node version **>=16**. To install run:
 
 - `npm install `
 - `npm run start` in one session
