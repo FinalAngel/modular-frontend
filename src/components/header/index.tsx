@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
       <nav className="navigation">
         <h2 hidden>Navigation</h2>
-        <ul className="nav">
+        <ul className="nav header__nav">
           <li className="nav__item nav__item--active">
             <a href="./#" className="nav__anchor">
               Home
