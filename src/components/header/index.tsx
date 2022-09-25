@@ -1,9 +1,18 @@
 import React from "react";
 
-import { Meta, MetaItem, MetaAnchor } from "components/meta";
 import { Form, Input } from "components/form";
+import { Meta, MetaItem, MetaAnchor } from "components/meta";
+import { Nav, NavItem, NavAnchor } from "components/nav";
 
 import "./header.scss";
+
+const menuEntries = [
+  "Home",
+  "Event",
+  "Accessoires",
+  "Apparel",
+  "Featured Items",
+];
 
 const Header: React.FC = () => {
   return (
@@ -26,33 +35,13 @@ const Header: React.FC = () => {
 
       <nav className="navigation">
         <h2 hidden>Navigation</h2>
-        <ul className="nav header__nav">
-          <li className="nav__item nav__item--active">
-            <a href="./#" className="nav__anchor">
-              Home
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="./#" className="nav__anchor">
-              Event
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="./#" className="nav__anchor">
-              Accessoires
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="./#" className="nav__anchor">
-              Apparel
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="./#" className="nav__anchor">
-              Featured Items
-            </a>
-          </li>
-        </ul>
+        <Nav>
+          {menuEntries.map((entry) => (
+            <NavItem key={entry} active>
+              <NavAnchor to="./#">{entry}</NavAnchor>
+            </NavItem>
+          ))}
+        </Nav>
       </nav>
     </header>
   );
