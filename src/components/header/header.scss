@@ -1,16 +1,10 @@
-// block
 .header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
+
 .header__nav {
   padding: 8px 5px;
   background: #ccc;
-}
-
-// block
-// TODO create separate component
-.logo {
-  flex: 1 auto;
 }
