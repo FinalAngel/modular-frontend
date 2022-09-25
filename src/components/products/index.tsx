@@ -24,3 +24,5 @@ const Products: React.FC<Props> = ({ title, items }) => {
 };
 
 export default Products;
+
+export { Props as ProductProps } from "./product";
