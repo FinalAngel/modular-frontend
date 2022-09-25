@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Meta, MetaItem, MetaAnchor } from "components/meta";
+import { Form, Input } from "components/form";
 
 import "./header.scss";
 
@@ -15,10 +16,9 @@ const Header: React.FC = () => {
           <MetaAnchor to={"./#"}>My Account</MetaAnchor>
         </MetaItem>
         <MetaItem>
-          <form className="form form--inline" method="post">
-            <input type="search" className="form__input" />{" "}
-            <input type="submit" value="Search" className="form__submit" />
-          </form>
+          <Form inline>
+            <Input type="text" /> <Input type="submit" value="Search" />
+          </Form>
         </MetaItem>
       </Meta>
 
