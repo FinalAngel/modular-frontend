@@ -1,19 +1,17 @@
-import puppeteer from "puppeteer";
-import { toMatchImageSnapshot } from "jest-image-snapshot";
+const puppeteer = require("puppeteer");
+const { toMatchImageSnapshot } = require("jest-image-snapshot");
 
 expect.extend({ toMatchImageSnapshot });
 
 describe("image-snapshot", () => {
   let browser;
-  let page;
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
       headless: true,
-      defaultViewport: { width: 1024, height: 1048 },
+      defaultViewport: { width: 1024, height: 1200 },
       timeout: 0,
     });
-    page = await browser.newPage();
   });
 
   afterAll(async () => {
@@ -21,7 +19,8 @@ describe("image-snapshot", () => {
   });
 
   it("renders correctly", async () => {
-    await page.goto("http://localhost:8000", { waitUntil: "load" });
+    const page = await browser.newPage();
+    await page.goto("http://localhost:8000");
     const image = await page.screenshot();
 
     expect(image).toMatchImageSnapshot();
