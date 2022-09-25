@@ -3,19 +3,16 @@ import React from "react";
 import QuickLinks from "components/quick-links";
 import Teaser from "components/teaser";
 
-// example using css (or substitute with sass/scss)
-import "./footer.css";
-// example using css modules
-import styles from "./grid.module.css";
+import "./footer.scss";
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <div className={styles.footer__gridAlpha}>
+      <div className="footer__grid footer__grid--alpha">
         <QuickLinks items={["Home", "Events", "Support", "Contact"]} />
       </div>
 
-      <div className={styles.footer__grid}>
+      <div className="footer__grid">
         <Teaser title="Announcements / Promoted Content">
           <p>
             Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
@@ -26,7 +23,7 @@ const Footer: React.FC = () => {
         </Teaser>
       </div>
 
-      <div className={styles.footer__gridOmega}>
+      <div className="footer__grid footer__grid--omega">
         <Teaser title="Coming Soon">
           <img src="https://dummyimage.com/150x60/ffffff/999999.jpg" alt="" />
         </Teaser>
