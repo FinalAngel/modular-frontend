@@ -24,5 +24,6 @@ yarn-error.log*
 
 # custom
 .parcel-cache/
+package-lock.json
 __image_snapshots__/
 dist/
