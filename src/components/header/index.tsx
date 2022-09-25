@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Form, Input } from "components/form";
-import { Meta, MetaItem, MetaAnchor } from "components/meta";
 import { Nav, NavItem, NavAnchor } from "components/nav";
 
 import "./header.scss";
@@ -17,19 +16,19 @@ const menuEntries = [
 const Header: React.FC = () => {
   return (
     <header className="header">
-      <Meta>
-        <MetaItem>
-          12 items in <MetaAnchor to={"./#"}>Cart</MetaAnchor>
-        </MetaItem>
-        <MetaItem>
-          <MetaAnchor to={"./#"}>My Account</MetaAnchor>
-        </MetaItem>
-        <MetaItem>
+      <Nav flex className="header__nav">
+        <NavItem>
+          12 items in <NavAnchor to={"./#"}>Cart</NavAnchor>
+        </NavItem>
+        <NavItem>
+          <NavAnchor to={"./#"}>My Account</NavAnchor>
+        </NavItem>
+        <NavItem>
           <Form inline>
             <Input type="text" /> <Input type="submit" value="Search" />
           </Form>
-        </MetaItem>
-      </Meta>
+        </NavItem>
+      </Nav>
 
       <h1 className="logo">A Big Title</h1>
 
@@ -38,7 +37,7 @@ const Header: React.FC = () => {
         <Nav>
           {menuEntries.map((entry) => (
             <NavItem key={entry} active>
-              <NavAnchor to="./#">{entry}</NavAnchor>
+              <NavAnchor to={"./#"}>{entry}</NavAnchor>
             </NavItem>
           ))}
         </Nav>

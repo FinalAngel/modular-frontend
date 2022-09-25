@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Nav, NavItem, NavAnchor } from "components/nav";
+
 export interface Props {
   items: string[];
 }
@@ -7,15 +9,13 @@ export interface Props {
 const QuickLinks: React.FC<Props> = ({ items }) => (
   <div className="quick-links">
     <h3 className="title title--h3">Quick Links</h3>
-    <ul className="nav quick-links__nav">
+    <Nav list>
       {items.map((item) => (
-        <li key={item} className="nav__item">
-          <a href="./#" className="nav__anchor">
-            {item}
-          </a>
-        </li>
+        <NavItem key={item}>
+          <NavAnchor to={"./#"}>{item}</NavAnchor>
+        </NavItem>
       ))}
-    </ul>
+    </Nav>
   </div>
 );
 

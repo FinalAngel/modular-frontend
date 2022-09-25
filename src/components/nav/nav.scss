@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  flex: 1 auto;
+}
+
+.nav--list {
+  display: block;
+
+  .nav__item {
+    margin-left: 0;
+  }
+}
+
+.nav--flex {
+  flex: 1 100%;
+  justify-content: end;
+
+  // increase specificity slightly
+  .nav__item {
+    display: inline;
+    margin-left: 20px;
+  }
+}
