@@ -28,6 +28,14 @@ const menuEntries = [
   "Featured Items",
 ];
 
+const products = Array.from({ length: 4 }, (index) => ({
+  id: `produt-${index}`,
+  title: "Item Title",
+  image: "https://dummyimage.com/300x300/cccccc/999999.jpg",
+  category: "Item Category",
+  price: "88.00",
+}));
+
 root.render(
   <React.StrictMode>
     <Container>
@@ -64,7 +72,7 @@ root.render(
           vitae tortor.
         </Text>
       </Headline>
-      <Products />
+      <Products title="Products" items={products} />
       <Footer>
         <Grid>
           <GridItem alpha>
