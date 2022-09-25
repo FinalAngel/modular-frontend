@@ -26,4 +26,3 @@ yarn-error.log*
 .parcel-cache/
 __image_snapshots__/
 dist/
-old/

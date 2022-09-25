@@ -1,0 +1,11 @@
+.footer__grid {
+  flex: 1 auto;
+  padding-right: 20px;
+}
+
+/* multiple approaches possible */
+.footer__gridAlpha,
+.footer__gridOmega {
+  flex: 1 75%;
+  padding: 0;
+}
