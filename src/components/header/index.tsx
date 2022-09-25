@@ -1,29 +1,26 @@
 import React from "react";
 
+import { Meta, MetaItem, MetaAnchor } from "components/meta";
+
 import "./header.scss";
 
 const Header: React.FC = () => {
   return (
     <header className="header">
-      <ul className="meta">
-        <li className="meta__item">
-          12 items in{" "}
-          <a href="./#" className="meta__anchor">
-            Cart
-          </a>
-        </li>
-        <li className="meta__item">
-          <a href="./#" className="meta__anchor">
-            My Account
-          </a>
-        </li>
-        <li className="meta__item">
+      <Meta>
+        <MetaItem>
+          12 items in <MetaAnchor to={"./#"}>Cart</MetaAnchor>
+        </MetaItem>
+        <MetaItem>
+          <MetaAnchor to={"./#"}>My Account</MetaAnchor>
+        </MetaItem>
+        <MetaItem>
           <form className="form form--inline" method="post">
             <input type="search" className="form__input" />{" "}
             <input type="submit" value="Search" className="form__submit" />
           </form>
-        </li>
-      </ul>
+        </MetaItem>
+      </Meta>
 
       <h1 className="logo">A Big Title</h1>
 
