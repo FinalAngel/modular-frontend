@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import App from "./components";
+import Container from "components/container";
+import Copyright from "components/copyright";
+import Footer from "components/footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -9,6 +11,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App />
+    <Container>
+      <Footer />
+      <Copyright />
+    </Container>
   </React.StrictMode>
 );
