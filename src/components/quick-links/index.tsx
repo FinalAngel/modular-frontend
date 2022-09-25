@@ -1,6 +1,6 @@
 import React from "react";
 
-interface Props {
+export interface Props {
   items: string[];
 }
 
@@ -10,7 +10,7 @@ const QuickLinks: React.FC<Props> = ({ items }) => (
     <ul>
       {items.map((item) => (
         <li key={item}>
-          <a href="#">{item}</a>
+          <a href="./#">{item}</a>
         </li>
       ))}
     </ul>
