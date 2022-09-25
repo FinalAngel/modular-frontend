@@ -32,14 +32,15 @@
 
 // block
 // TODO create separate component
-.nav {
+.header__nav {
   flex: 1 auto;
   display: flex;
-}
-.nav__item {
-  margin-left: 20px;
 
-  &:first-child {
-    margin-left: 0;
+  .nav__item {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
