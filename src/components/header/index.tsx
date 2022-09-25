@@ -6,15 +6,21 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <ul className="meta">
-        <li className="meta-item">
-          12 items in <a href="./#">Cart</a>
+        <li className="meta__item">
+          12 items in{" "}
+          <a href="./#" className="meta__anchor">
+            Cart
+          </a>
         </li>
-        <li className="meta-item">
-          <a href="./#">My Account</a>
+        <li className="meta__item">
+          <a href="./#" className="meta__anchor">
+            My Account
+          </a>
         </li>
-        <li className="meta-item">
-          <form className="meta-form" method="post">
-            <input type="search" /> <input type="submit" value="Search" />
+        <li className="meta__item">
+          <form className="form form--inline" method="post">
+            <input type="search" className="form__input" />{" "}
+            <input type="submit" value="Search" className="form__submit" />
           </form>
         </li>
       </ul>
@@ -24,20 +30,30 @@ const Header: React.FC = () => {
       <nav className="navigation">
         <h2 hidden>Navigation</h2>
         <ul className="nav">
-          <li className="nav-item">
-            <a href="./#">Home</a>
+          <li className="nav__item nav__item--active">
+            <a href="./#" className="nav__anchor">
+              Home
+            </a>
           </li>
-          <li className="nav-item">
-            <a href="./#">Event</a>
+          <li className="nav__item">
+            <a href="./#" className="nav__anchor">
+              Event
+            </a>
           </li>
-          <li className="nav-item">
-            <a href="./#">Accessoires</a>
+          <li className="nav__item">
+            <a href="./#" className="nav__anchor">
+              Accessoires
+            </a>
           </li>
-          <li className="nav-item">
-            <a href="./#">Apparel</a>
+          <li className="nav__item">
+            <a href="./#" className="nav__anchor">
+              Apparel
+            </a>
           </li>
-          <li className="nav-item">
-            <a href="./#">Featured Items</a>
+          <li className="nav__item">
+            <a href="./#" className="nav__anchor">
+              Featured Items
+            </a>
           </li>
         </ul>
       </nav>
