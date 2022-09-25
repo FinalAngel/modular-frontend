@@ -2,7 +2,12 @@ import React from "react";
 
 import "./headline.scss";
 
-const Headline: React.FC = () => {
+interface Props {
+  image: string;
+  children?: React.ReactNode;
+}
+
+const Headline: React.FC<Props> = ({ image, children }) => {
   return (
     <section className="headline">
       <img
@@ -10,12 +15,7 @@ const Headline: React.FC = () => {
         className="headline__image"
         alt=""
       />
-      <h2 className="title title--h2">Intro Copy Headline</h2>
-      <p className="text">
-        Fusce vel dui. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-        justo. Pellentesque commodo eros a enim. Fusce a quam. Etiam vitae
-        tortor.
-      </p>
+      {children}
     </section>
   );
 };

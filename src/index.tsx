@@ -11,6 +11,7 @@ import Products from "components/products";
 
 import { Form, Input } from "components/form";
 import { Nav, NavItem, NavAnchor } from "components/nav";
+import { Title, Text } from "components/typography";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -52,7 +53,14 @@ root.render(
           ))}
         </Nav>
       </Header>
-      <Headline />
+      <Headline image="https://dummyimage.com/1024x300/cccccc/999999.jpg">
+        <Title type="h2">Intro Copy Headline</Title>
+        <Text>
+          Fusce vel dui. In enim justo, rhoncus ut, imperdiet a, venenatis
+          vitae, justo. Pellentesque commodo eros a enim. Fusce a quam. Etiam
+          vitae tortor.
+        </Text>
+      </Headline>
       <Products />
       <Footer />
       <Copyright />
