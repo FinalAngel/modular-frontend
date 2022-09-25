@@ -5,16 +5,18 @@ export interface Props {
 }
 
 const QuickLinks: React.FC<Props> = ({ items }) => (
-  <>
-    <h3>Quick Links</h3>
-    <ul>
+  <div className="quick-links">
+    <h3 className="title title--h3">Quick Links</h3>
+    <ul className="nav quick-links__nav">
       {items.map((item) => (
-        <li key={item}>
-          <a href="./#">{item}</a>
+        <li key={item} className="nav__item">
+          <a href="./#" className="nav__anchor">
+            {item}
+          </a>
         </li>
       ))}
     </ul>
-  </>
+  </div>
 );
 
 export default QuickLinks;
