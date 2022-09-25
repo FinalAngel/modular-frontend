@@ -6,6 +6,7 @@ import Copyright from "components/copyright";
 import Footer from "components/footer";
 import Header from "components/header";
 import Headline from "components/headline";
+import Logo from "components/logo";
 import Products from "components/products";
 
 import { Form, Input } from "components/form";
@@ -41,18 +42,15 @@ root.render(
           </NavItem>
         </Nav>
 
-        <h1 className="logo">A Big Title</h1>
+        <Logo />
 
-        <nav className="navigation">
-          <h2 hidden>Navigation</h2>
-          <Nav>
-            {menuEntries.map((entry) => (
-              <NavItem key={entry} active>
-                <NavAnchor to={"./#"}>{entry}</NavAnchor>
-              </NavItem>
-            ))}
-          </Nav>
-        </nav>
+        <Nav>
+          {menuEntries.map((entry) => (
+            <NavItem key={entry} active>
+              <NavAnchor to={"./#"}>{entry}</NavAnchor>
+            </NavItem>
+          ))}
+        </Nav>
       </Header>
       <Headline />
       <Products />
