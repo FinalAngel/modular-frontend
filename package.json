@@ -38,7 +38,8 @@
   "scripts": {
     "start": "parcel src/index.html --port 8000",
     "test": "jest --watchAll",
-    "storybook": "start-storybook -p 6006",
+    "lint": "tsc --noEmit",
+    "storybook": "start-storybook -p 8001",
     "build-storybook": "build-storybook"
   },
   "eslintConfig": {

@@ -4,7 +4,7 @@ const { toMatchImageSnapshot } = require("jest-image-snapshot");
 expect.extend({ toMatchImageSnapshot });
 
 describe("image-snapshot", () => {
-  let browser;
+  let browser: any;
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
@@ -21,6 +21,7 @@ describe("image-snapshot", () => {
   it("renders correctly", async () => {
     const page = await browser.newPage();
     await page.goto("http://localhost:8000");
+    await page.waitForTimeout(1000);
     const image = await page.screenshot();
 
     expect(image).toMatchImageSnapshot();
