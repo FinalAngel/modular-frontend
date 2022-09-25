@@ -7,7 +7,7 @@ import Footer from "components/footer";
 import Header from "components/header";
 import Headline from "components/headline";
 import Logo from "components/logo";
-import Products from "components/products";
+import Products, { ProductProps } from "components/products";
 import QuickLinks from "components/quick-links";
 import Teaser from "components/teaser";
 
@@ -28,7 +28,7 @@ const menuEntries = [
   "Featured Items",
 ];
 
-const products = Array.from({ length: 4 }, (index) => ({
+const products: ProductProps[] = Array.from({ length: 4 }, (index) => ({
   id: `produt-${index}`,
   title: "Item Title",
   image: "https://dummyimage.com/300x300/cccccc/999999.jpg",
