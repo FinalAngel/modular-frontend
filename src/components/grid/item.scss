@@ -1,0 +1,10 @@
+.grid__item {
+  flex: 1 auto;
+  padding-right: 20px;
+}
+
+.grid__item--alpha,
+.grid__item--omega {
+  flex: 1 75%;
+  padding: 0;
+}
