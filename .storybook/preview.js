@@ -1,4 +1,7 @@
-import "!style-loader!css-loader!sass-loader!../src/index.scss";
+import React from "react";
+import "../src/index.scss";
+
+export const decorators = [(Story) => <Story />];
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
