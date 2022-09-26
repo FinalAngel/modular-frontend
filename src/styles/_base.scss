@@ -1,17 +1,17 @@
 /* some basic resets, not relevant for the course
    do not change this file */
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html {
   font-family: "Helvetica Now", "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
 body,
