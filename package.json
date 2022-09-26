@@ -1,8 +1,7 @@
 {
   "name": "my-app",
   "dependencies": {
-    "@parcel/plugin": "^2.7.0",
-    "@parcel/transformer-sass": "^2.7.0",
+    "css-loader": "^6.7.1",
     "parcel": "^2.7.0",
     "parcel-resolver-ts-base-url": "^1.1.5",
     "posthtml-include": "^1.7.4",
@@ -13,7 +12,7 @@
     "typescript": "^4.8.3"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.5.12",
+    "@parcel/transformer-sass": "^2.7.0",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
@@ -36,11 +35,12 @@
     "puppeteer": "^18.0.5"
   },
   "scripts": {
-    "start": "parcel src/index.html --port 8000",
+    "start": "npm run clean && parcel src/index.html --port 8000",
     "test": "jest --watchAll",
     "lint": "tsc --noEmit",
     "storybook": "start-storybook -p 8001",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "clean": "rm -rf .parcel-cache/ && rm -rf dist/"
   },
   "eslintConfig": {
     "extends": [
