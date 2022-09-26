@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "clsx";
 
 import "./form.scss";
 
@@ -9,7 +10,12 @@ interface Props {
 
 const Form: React.FC<Props> = ({ inline, children }) => {
   return (
-    <form className={`form${inline ? " form--inline" : ""}`} method="post">
+    <form
+      className={classNames("form", {
+        "form--inline": inline,
+      })}
+      method="post"
+    >
       {children}
     </form>
   );

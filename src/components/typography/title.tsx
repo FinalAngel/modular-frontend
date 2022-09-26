@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "clsx";
 
 import "./title.scss";
 
@@ -12,10 +13,7 @@ const Title: React.FC<Props> = ({ type, className, children }) => {
   const Component = type;
 
   return (
-    <Component
-      className={`title title--${type}
-        ${className ? ` ${className}` : ""}`}
-    >
+    <Component className={classNames("title", `title--${type}`, className)}>
       {children}
     </Component>
   );

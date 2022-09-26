@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "clsx";
 
 import "./item.scss";
 
@@ -9,7 +10,11 @@ interface Props {
 
 const Item: React.FC<Props> = ({ active, children }) => {
   return (
-    <li className={`nav__item${active ? " nav__item--active" : ""}`}>
+    <li
+      className={classNames("nav__item", {
+        "nav__item--active": active,
+      })}
+    >
       {children}
     </li>
   );

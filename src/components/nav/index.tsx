@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "clsx";
 
 import "./nav.scss";
 
@@ -10,12 +11,20 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({ flex, list, className, children }) => {
-  const styles = `nav
-    ${flex ? ` nav--flex` : ""}
-    ${list ? ` nav--list` : ""}
-    ${className ? ` ${className}` : ""}`;
-
-  return <ul className={styles}>{children}</ul>;
+  return (
+    <ul
+      className={classNames(
+        "nav",
+        {
+          "nav--flex": flex,
+          "nav--list": list,
+        },
+        className
+      )}
+    >
+      {children}
+    </ul>
+  );
 };
 
 export { Nav };

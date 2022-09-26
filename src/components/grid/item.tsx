@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "clsx";
 
 import "./item.scss";
 
@@ -9,10 +10,16 @@ interface Props {
 }
 
 const Item: React.FC<Props> = ({ alpha, omega, children }) => {
-  const style = `grid__item
-    ${alpha ? ` grid__item--alpha` : ""}
-    ${omega ? ` grid__item--omega` : ""}`;
-  return <div className={style}>{children}</div>;
+  return (
+    <div
+      className={classNames("grid__item", {
+        "grid__item--alpha": alpha,
+        "grid__item--omega": omega,
+      })}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Item;

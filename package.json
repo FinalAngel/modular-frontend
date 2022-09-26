@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "dependencies": {
+    "clsx": "^1.2.1",
     "css-loader": "^6.7.1",
     "parcel": "^2.7.0",
     "parcel-resolver-ts-base-url": "^1.1.5",

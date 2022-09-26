@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "clsx";
 
 interface Props {
   className?: string;
@@ -6,12 +7,7 @@ interface Props {
 }
 
 const Section: React.FC<Props> = ({ className, children }) => (
-  <div
-    className={`section
-    ${className ? ` ${className}` : ""}`}
-  >
-    {children}
-  </div>
+  <div className={classNames("section", className)}>{children}</div>
 );
 
 export default Section;
