@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Title } from "components/typography";
+
 import "./product.scss";
 
 export interface Props {
@@ -14,11 +16,11 @@ const Product: React.FC<Props> = ({ image, title, category, price }) => {
   return (
     <li className="product__item">
       <img src={image} alt="" className="product__image" />
-      <h3 className="product__title">
+      <Title type="h3" className="product__title">
         <a href="./#" className="product__anchor">
           {title}
         </a>
-      </h3>
+      </Title>
       <p className="product__category">{category}</p>
       <p className="product__price">${price}</p>
     </li>

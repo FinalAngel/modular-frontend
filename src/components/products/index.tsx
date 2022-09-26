@@ -5,7 +5,7 @@ import { Title, Section } from "components/typography";
 import ProductContainer from "./container";
 import Product, { Props as ProductProps } from "./product";
 
-interface Props {
+export interface Props {
   title: string;
   items: ProductProps[];
 }

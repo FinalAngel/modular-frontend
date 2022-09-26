@@ -4,7 +4,7 @@ import { Section } from "components/typography";
 
 import "./headline.scss";
 
-interface Props {
+export interface Props {
   image: string;
   children?: React.ReactNode;
 }

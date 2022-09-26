@@ -7,7 +7,9 @@ export default {
   component: QuickLinks,
 };
 
+const quickLinksFixture = ["Home", "Events", "Support", "Contact"];
+
 export const Standard = (args: Props) => <QuickLinks {...args} />;
 Standard.args = {
-  items: ["Home", "Events", "Support", "Contact"],
+  items: quickLinksFixture,
 };
