@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Title } from "components/typography";
+
 export interface Props {
   title: string;
   children?: React.ReactNode;
@@ -7,7 +9,7 @@ export interface Props {
 
 const Teaser: React.FC<Props> = ({ title, children }) => (
   <div className="teaser">
-    <h3 className="title title--h3">{title}</h3>
+    <Title type="h3">{title}</Title>
     {children}
   </div>
 );

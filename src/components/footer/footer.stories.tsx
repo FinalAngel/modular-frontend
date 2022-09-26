@@ -3,8 +3,10 @@ import React from "react";
 import Footer from "./";
 
 export default {
-  title: "Organisms/Footer",
+  title: "Atoms/Footer",
   component: Footer,
 };
 
-export const Standard = () => <Footer />;
+export const Standard = () => (
+  <Footer>Some dummy content inside the footer.</Footer>
+);
