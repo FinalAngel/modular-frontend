@@ -1,17 +1,19 @@
 import React from "react";
 
+import "./title.scss";
+
 interface Props {
   type: "h1" | "h2" | "h3";
   className?: string;
   children?: React.ReactNode;
 }
 
-const Text: React.FC<Props> = ({ type, className, children }) => {
+const Title: React.FC<Props> = ({ type, className, children }) => {
   const Component = type;
 
   return (
     <Component
-      className={`text text--${type}
+      className={`title title--${type}
         ${className ? ` ${className}` : ""}`}
     >
       {children}
@@ -19,4 +21,4 @@ const Text: React.FC<Props> = ({ type, className, children }) => {
   );
 };
 
-export default Text;
+export default Title;
