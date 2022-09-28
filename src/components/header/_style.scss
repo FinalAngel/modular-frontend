@@ -5,7 +5,9 @@
 }
 
 .meta {
+  display: flex;
   flex: 1 100%;
+  justify-content: end;
   text-align: right;
   padding: 8px 5px;
   background: #ccc;
