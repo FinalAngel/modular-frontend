@@ -8,7 +8,7 @@ import { HeaderLayout } from "components/layout";
 import { FooterLayout } from "components/layout";
 import { Title, Text } from "components/typography";
 
-const products: ProductProps[] = Array.from({ length: 4 }, (index) => ({
+const products: ProductProps[] = Array.from({ length: 4 }, (_, index) => ({
   id: `produt-${index}`,
   title: "Item Title",
   image: "https://dummyimage.com/300x300/cccccc/999999.jpg",
