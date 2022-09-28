@@ -8,11 +8,12 @@ export default {
 };
 
 const productFixture: ProductProps[] = Array.from({ length: 4 }, (index) => ({
-  id: `produt-${index}`,
+  uuid: `produt-${index}`,
   title: "Item Title",
   image: "https://dummyimage.com/300x300/cccccc/999999.jpg",
   category: "Item Category",
   price: "88.00",
+  to: `/product/${index}/`,
 }));
 
 export const Standard = (args: Props) => <Products {...args} />;

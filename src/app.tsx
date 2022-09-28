@@ -9,11 +9,12 @@ import { FooterLayout } from "components/layout";
 import { Title, Text } from "components/typography";
 
 const products: ProductProps[] = Array.from({ length: 4 }, (_, index) => ({
-  id: `produt-${index}`,
+  uuid: `produt-${index}`,
   title: "Item Title",
   image: "https://dummyimage.com/300x300/cccccc/999999.jpg",
   category: "Item Category",
   price: "88.00",
+  to: `/product/${index}/`,
 }));
 
 const App: React.FC = () => {

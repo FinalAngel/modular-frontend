@@ -16,7 +16,7 @@ const Products: React.FC<Props> = ({ title, items }) => {
       <Title type="h2">{title}</Title>
       <ProductContainer>
         {items.map((product, index) => (
-          <Product key={product.id} {...product} />
+          <Product key={product.uuid} {...product} />
         ))}
       </ProductContainer>
     </Section>

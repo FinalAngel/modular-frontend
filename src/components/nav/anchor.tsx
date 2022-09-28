@@ -6,7 +6,11 @@ interface Props {
 }
 
 const Anchor: React.FC<Props> = ({ to, children }) => {
-  return <a href={to}>{children}</a>;
+  return (
+    <a href={to} className="nav__anchor">
+      {children}
+    </a>
+  );
 };
 
 export default Anchor;
