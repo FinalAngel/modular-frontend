@@ -24,6 +24,6 @@ describe("image-snapshot", () => {
     await page.waitForTimeout(1000);
     const image = await page.screenshot();
 
-    expect(image).toMatchSnapshot();
+    expect(image).toMatchImageSnapshot();
   });
 });
