@@ -8,7 +8,7 @@ describe("image-snapshot", () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: true,
+      headless: "new",
       defaultViewport: { width: 1024, height: 1200 },
       timeout: 0,
     });
@@ -24,6 +24,6 @@ describe("image-snapshot", () => {
     await page.waitForTimeout(1000);
     const image = await page.screenshot();
 
-    expect(image).toMatchImageSnapshot();
+    expect(image).toMatchSnapshot();
   });
 });
