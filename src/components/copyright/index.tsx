@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 // example using styled-components
@@ -7,7 +6,7 @@ const Container = styled.div`
   margin-top: 20px;
 `;
 
-const Copyright: React.FC = () => (
+const Copyright = () => (
   <Container className="copyright">
     &copy; {new Date().getFullYear()} Your Name
   </Container>

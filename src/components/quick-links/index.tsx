@@ -1,10 +1,8 @@
-import React from "react";
-
 export interface Props {
   items: string[];
 }
 
-const QuickLinks: React.FC<Props> = ({ items }) => (
+const QuickLinks = ({ items }: Props) => (
   <>
     <h3>Quick Links</h3>
     <ul>

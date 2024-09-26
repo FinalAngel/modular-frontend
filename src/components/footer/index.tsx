@@ -1,5 +1,3 @@
-import React from "react";
-
 import QuickLinks from "components/quick-links";
 import Teaser from "components/teaser";
 
@@ -8,7 +6,7 @@ import "./footer.css";
 // example using css modules
 import styles from "./grid.module.css";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className={styles.footer__gridAlpha}>

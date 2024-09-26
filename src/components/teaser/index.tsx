@@ -5,7 +5,7 @@ export interface Props {
   children?: React.ReactNode;
 }
 
-const Teaser: React.FC<Props> = ({ title, children }) => (
+const Teaser = ({ title, children }: Props) => (
   <>
     <h3>{title}</h3>
     {children}

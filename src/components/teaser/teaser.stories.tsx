@@ -1,5 +1,3 @@
-import React from "react";
-
 import Teaser, { Props } from "./";
 
 export default {
