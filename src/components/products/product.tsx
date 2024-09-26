@@ -4,7 +4,7 @@ import "./product.scss";
 
 export interface Props {
   uuid: string;
-  image: string;
+  image?: string;
   title: string;
   category: "Item Category";
   price: string;
@@ -14,7 +14,7 @@ export interface Props {
 const Product = ({ image, title, category, price, to }: Props) => {
   return (
     <li className="product__item">
-      <img src={image} alt="" className="product__image" />
+      {image ? <img src={image} alt="" className="product__image" /> : null}
       <Title type="h3" className="product__title">
         <a href={to} className="product__anchor">
           {title}

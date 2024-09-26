@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Title, Section } from "components/typography";
 
 import ProductContainer from "./container";
