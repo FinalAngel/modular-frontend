@@ -1,5 +1,3 @@
-import React from "react";
-
 import Products, { Props, ProductProps } from "./";
 
 export default {

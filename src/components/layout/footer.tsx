@@ -1,5 +1,3 @@
-import React from "react";
-
 import Footer from "components/footer";
 import QuickLinks from "components/quick-links";
 import Teaser from "components/teaser";
@@ -7,7 +5,7 @@ import Teaser from "components/teaser";
 import { Grid, GridItem } from "components/grid";
 import { Text } from "components/typography";
 
-const FooterLayout: React.FC = () => {
+const FooterLayout = () => {
   return (
     <Footer>
       <Grid>

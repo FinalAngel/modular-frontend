@@ -9,7 +9,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Item: React.FC<Props> = ({ alpha, omega, children }) => {
+const Item = ({ alpha, omega, children }: Props) => {
   return (
     <div
       className={classNames("grid__item", {

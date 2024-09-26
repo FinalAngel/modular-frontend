@@ -8,7 +8,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Item: React.FC<Props> = ({ active, children }) => {
+const Item = ({ active, children }: Props) => {
   return (
     <li
       className={classNames("nav__item", {

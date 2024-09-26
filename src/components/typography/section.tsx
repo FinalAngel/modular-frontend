@@ -6,7 +6,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Section: React.FC<Props> = ({ className, children }) => (
+const Section = ({ className, children }: Props) => (
   <div className={classNames("section", className)}>{children}</div>
 );
 

@@ -9,7 +9,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Title: React.FC<Props> = ({ type, className, children }) => {
+const Title = ({ type, className, children }: Props) => {
   const Component = type;
 
   return (

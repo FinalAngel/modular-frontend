@@ -1,5 +1,3 @@
-import React from "react";
-
 import Copyright from "./";
 
 export default {

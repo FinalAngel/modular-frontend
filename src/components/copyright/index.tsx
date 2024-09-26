@@ -1,8 +1,6 @@
-import React from "react";
-
 import "./copyright.scss";
 
-const Copyright: React.FC = () => (
+const Copyright = () => (
   <div className="copyright">&copy; {new Date().getFullYear()} Your Name</div>
 );
 

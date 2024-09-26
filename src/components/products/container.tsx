@@ -6,7 +6,7 @@ export interface Props {
   children?: React.ReactNode;
 }
 
-const Container: React.FC<Props> = ({ children }) => {
+const Container = ({ children }: Props) => {
   return <ul className="product">{children}</ul>;
 };
 

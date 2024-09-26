@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Title } from "components/typography";
 
 import "./product.scss";
@@ -13,7 +11,7 @@ export interface Props {
   to: string;
 }
 
-const Product: React.FC<Props> = ({ image, title, category, price, to }) => {
+const Product = ({ image, title, category, price, to }: Props) => {
   return (
     <li className="product__item">
       <img src={image} alt="" className="product__image" />

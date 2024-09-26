@@ -1,5 +1,3 @@
-import React from "react";
-
 import Headline, { Props } from "./";
 
 export default {

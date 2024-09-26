@@ -8,7 +8,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Form: React.FC<Props> = ({ inline, children }) => {
+const Form = ({ inline, children }: Props) => {
   return (
     <form
       className={classNames("form", {

@@ -4,7 +4,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Text: React.FC<Props> = ({ children }) => {
+const Text = ({ children }: Props) => {
   return <p className="text">{children}</p>;
 };
 

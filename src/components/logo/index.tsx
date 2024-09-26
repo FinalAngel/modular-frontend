@@ -1,10 +1,8 @@
-import React from "react";
-
 import { Title } from "components/typography";
 
 import "./logo.scss";
 
-const Logo: React.FC = () => {
+const Logo = () => {
   return (
     <Title type="h1" className="logo">
       A Big Title

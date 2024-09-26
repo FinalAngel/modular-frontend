@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Nav, NavItem, NavAnchor } from "./";
 
 export default {

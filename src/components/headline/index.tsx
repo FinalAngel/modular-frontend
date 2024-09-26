@@ -5,18 +5,17 @@ import { Section } from "components/typography";
 import "./headline.scss";
 
 export interface Props {
-  image: string;
+  image?: string;
   children?: React.ReactNode;
 }
 
-const Headline: React.FC<Props> = ({ image, children }) => {
+const Headline = ({
+  image = "https://dummyimage.com/1024x300/cccccc/999999.jpg",
+  children,
+}: Props) => {
   return (
     <Section className="headline">
-      <img
-        src="https://dummyimage.com/1024x300/cccccc/999999.jpg"
-        className="headline__image"
-        alt=""
-      />
+      <img src={image} className="headline__image" alt="" />
       {children}
     </Section>
   );

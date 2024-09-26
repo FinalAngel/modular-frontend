@@ -10,7 +10,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Nav: React.FC<Props> = ({ flex, list, className, children }) => {
+const Nav = ({ flex, list, className, children }: Props) => {
   return (
     <ul
       className={classNames(

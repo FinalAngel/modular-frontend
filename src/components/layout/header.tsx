@@ -1,5 +1,3 @@
-import React from "react";
-
 import Header from "components/header";
 import Logo from "components/logo";
 
@@ -14,7 +12,7 @@ const menuEntries = [
   "Featured Items",
 ];
 
-const HeaderLayout: React.FC = () => {
+const HeaderLayout = () => {
   return (
     <Header>
       <Nav flex className="header__nav">

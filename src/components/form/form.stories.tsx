@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Form, Input } from "./";
 
 export default {

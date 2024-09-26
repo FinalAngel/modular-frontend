@@ -1,5 +1,3 @@
-import React from "react";
-
 import Container from "components/container";
 import Copyright from "components/copyright";
 import Headline from "components/headline";
@@ -17,7 +15,7 @@ const products: ProductProps[] = Array.from({ length: 4 }, (_, index) => ({
   to: `/product/${index}/`,
 }));
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <Container>
       <HeaderLayout />

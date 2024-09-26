@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Text, Title, Section } from "./";
 
 export default {

@@ -5,7 +5,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Anchor: React.FC<Props> = ({ to, children }) => {
+const Anchor = ({ to, children }: Props) => {
   return (
     <a href={to} className="nav__anchor">
       {children}

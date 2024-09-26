@@ -10,12 +10,12 @@ export interface Props {
   items: ProductProps[];
 }
 
-const Products: React.FC<Props> = ({ title, items }) => {
+const Products = ({ title, items }: Props) => {
   return (
     <Section>
       <Title type="h2">{title}</Title>
       <ProductContainer>
-        {items.map((product, index) => (
+        {items.map((product) => (
           <Product key={product.uuid} {...product} />
         ))}
       </ProductContainer>
@@ -25,4 +25,4 @@ const Products: React.FC<Props> = ({ title, items }) => {
 
 export default Products;
 
-export { Props as ProductProps } from "./product";
+export { type Props as ProductProps } from "./product";
